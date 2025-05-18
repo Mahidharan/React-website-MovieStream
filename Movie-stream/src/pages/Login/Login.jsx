@@ -31,10 +31,6 @@ const[signState,setSignState]=useState("Sign In")
          
         </div>
           
-
-
-
-
       </div>
       
     </div>
