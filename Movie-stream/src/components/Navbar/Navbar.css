@@ -16,7 +16,7 @@
     
 }
 .navbar-left img{
-    width: 90px;
+    width: 70px;
 }
 
 .navbar-left ul{
@@ -74,4 +74,9 @@
 
 .navbar-profile:hover .dropdown{
     display: block;
+}
+
+.nav-dark{
+    background: #141414;
+    height: 60px;
 }
