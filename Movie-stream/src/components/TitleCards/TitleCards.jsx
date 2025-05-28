@@ -16,11 +16,11 @@ const options = {
   }
 };
 
-const handlewheel = (event) => {
+// const handlewheel = (event) => {
 
-  event.preventDefault();
-  cardsRef.current.scrollLeft += event.deltaY;
-}
+//   event.preventDefault();
+//   cardsRef.current.scrollLeft += event.deltaY;
+// }
 
 useEffect(()=>{
 
@@ -29,8 +29,10 @@ useEffect(()=>{
   .then(res => setApiData(res.results))
   .catch(err => console.error(err));
 
-  cardsRef.current.addEventListener('wheel',handlewheel);
-})
+//   cardsRef.current.addEventListener('wheel',handlewheel);
+// 
+}
+)
                                                                                                                                      
 
   return (
