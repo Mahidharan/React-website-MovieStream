@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className="footer-icons">
-      <FaInstagram size={40} style={{cursor:'pointer'}}/>
-        <FaFacebook size={40} style={{cursor:'pointer'}}/>
-        <FaYoutube size={40} style={{cursor:'pointer'}}/>
-        <FaTwitter size={40}  style={{cursor:'pointer'}}/>
+      <FaInstagram size={40} style={{cursor:'pointer'}} className='icon'/>
+        <FaFacebook size={40} style={{cursor:'pointer'}} className='icon'/>
+        <FaYoutube size={40} style={{cursor:'pointer'}} className='icon'/>
+        <FaTwitter size={40}  style={{cursor:'pointer'}} className='icon'/>
       </div>
       <ul>
         <li>Audio Description</li>

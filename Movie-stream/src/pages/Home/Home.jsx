@@ -7,10 +7,18 @@ import info_icon from '../../assets/info1.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/Footer'
 import { FaPlay } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handlePlay = () => {
+    navigate('/player/9986100');
+  };
+
   return (
     <div className='home'>
       <Navbar/>
@@ -20,7 +28,7 @@ const Home = () => {
           <img src={hero_title} alt="" className='caption-img'/>
           {/* <p> Thanos, a powerful intergalactic villain, seeks to collect all six Infinity Stones to achieve his goal of balancing the universe by eliminating half of its population. </p> */}
             <div className="hero-btns">
-              <button className='btn'>< FaPlay size={15} color="black" />
+              <button className='btn' onClick={handlePlay}>< FaPlay size={15} color="black" />
               Play</button>
               <button className='btn dark-btn'> <img src={info_icon} />More Info</button>
             </div>

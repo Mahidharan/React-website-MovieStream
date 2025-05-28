@@ -74,9 +74,68 @@
 
 .navbar-profile:hover .dropdown{
     display: block;
+     box-shadow: 0 4px 12px rgb(170, 3, 3);
+
 }
 
 .nav-dark{
-    background: #141414;
-    height: 60px;
+   background-color: #000;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    height: 50px;
 }
+
+@media screen and (max-width:800px){
+    .navbar{
+        padding: 20px 2%;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar img{
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar img{
+        height: 20px;
+        width: 10px;
+    }
+    .navbar-right{
+        gap: 10px;
+    }
+
+}
+ @media screen and (max-width: 768px) {
+    .navbar-left ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 40%;
+        background-color: #101010eb;
+        box-shadow: 0 4px 12px rgb(152, 5, 5);
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        display: none;
+    }
+
+    .navbar-left ul.show {
+        display: flex;
+    }
+
+    .navbar-left {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navbar-left img {
+        width: 50px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
